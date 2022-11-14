@@ -1,0 +1,8 @@
+.app-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+
+    .route-container {
+        background: var(--black-0);
+    }
+}

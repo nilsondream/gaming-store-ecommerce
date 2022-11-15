@@ -1,15 +1,38 @@
+import { DiscordLogo, FacebookLogo, InstagramLogo, TwitchLogo, TwitterLogo, YoutubeLogo } from 'phosphor-react'
 import React from 'react'
 import { LogoWhite } from '../assets/images'
 
 const Footer = () => {
     return (
         <div className='footer-container'>
-            <img src={LogoWhite} alt="logo" />
             <div className='footer-links'>
-                links
+                <img src={LogoWhite} alt="logo" />
+                <ul>
+                    <h1>Soporte</h1>
+                    <p>Soporte de producto</p>
+                    <p>Soporte de contacto</p>
+                </ul>
+                <ul>
+                    <h1>Compañía</h1>
+                    <p>Sobre nosotros</p>
+                    <p>Privacidad</p>
+                    <p>Términos de Uso</p>
+                    <p>Accesibilidad</p>
+                    <p>Uso de cookies</p>
+                </ul>
+                <ul>
+                    <h1>Otros recursos</h1>
+                    <p>Software NGENUITY</p>
+                    <p>Blog</p>
+                </ul>
             </div>
             <div className='social-links'>
-                social links
+                <div><InstagramLogo weight='fill' /></div>
+                <div><FacebookLogo weight='fill' /></div>
+                <div><DiscordLogo weight='fill' /></div>
+                <div><TwitchLogo weight='fill' /></div>
+                <div><TwitterLogo weight='fill' /></div>
+                <div><YoutubeLogo weight='fill' /></div>
             </div>
         </div>
     )

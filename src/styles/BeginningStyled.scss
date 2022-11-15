@@ -171,7 +171,6 @@
                 width: 100%;
                 border-radius: var(--border-4);
                 z-index: 1;
-                filter: opacity(.5);
                 cursor: pointer;
             }
 
@@ -184,10 +183,6 @@
                 border-radius: var(--border-5);
                 background: var(--red);
                 z-index: 2;
-            }
-
-            &:hover img {
-                filter: opacity(1);
             }
         }
 

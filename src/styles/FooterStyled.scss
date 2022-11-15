@@ -1,0 +1,9 @@
+.footer-container {
+    margin: 20px;
+    padding: 30px;
+    background: var(--black-1);
+    border-radius: var(--border-5);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+}

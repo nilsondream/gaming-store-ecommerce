@@ -1,6 +1,6 @@
 import React from 'react'
 import { Bell, ChatDots, MagnifyingGlass } from 'phosphor-react'
-import { CPU1, Headset1, HomeImg, HomeImg2, Keyboard1, Mouse1, Profile } from '../assets/images'
+import { CPU1, Graphic, Headset1, HomeImg, HomeImg2, Keyboard1, Mouse1, Profile } from '../assets/images'
 
 const Beginning = () => {
     return (
@@ -9,7 +9,7 @@ const Beginning = () => {
                 <div className='shadow-beginning' />
                 <img className='beginning-img' src={HomeImg} alt="homeimage" />
                 <div className='desc-beginning'>
-                    <h1>Bienvenido a<br />Gaming<span> Store</span></h1>
+                    <h1>Bienvenido a<br/><span>Gaming</span> Store</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, eum!</p>
                 </div>
 
@@ -125,19 +125,14 @@ const Beginning = () => {
                 <div className='setup-container'>
                     <img src={HomeImg2} alt="grapichimage" />
                     <div>
-                        <h1>Personaliza<br />como tú<br />quieras</h1>
-                        <p>Arma tu setup gaming</p>
+                        <h1>Arma tu setup<br />como tú quieras</h1>
+                        <button>Empezar</button>
                     </div>
                 </div>
 
-                {/*<div className='ad-team'>
+                <div className='ad-team'>
                     <img src={Graphic} alt="grapichimage" />
                     <span>Anuncio</span>
-                </div>*/}
-
-                <div>
-                    <h1>Nuestros Sponsors</h1>
-                    <div></div>
                 </div>
             </div>
         </div>

@@ -44,8 +44,8 @@
     --cyan: #0dcaf0;
 
     //gradient
-    --gradient-1: linear-gradient(135deg, var(--pink), var(--indigo));
-    --gradient-2: linear-gradient(135deg, rgba(214, 51, 132, 0.5), rgba(103, 16, 242, 0.5));
+    --gradient-1: linear-gradient(135deg, var(--cyan), var(--indigo));
+    --gradient-2: linear-gradient(135deg, rgba(13, 202, 240, 0.5), rgba(103, 16, 242, 0.5));
 
     //fonts
     --ff-1: 'Poppins', sans-serif;
@@ -125,3 +125,4 @@ input {
 @import './AppStyled.scss';
 @import './SidebarStyled.scss';
 @import './BeginningStyled.scss';
+@import './FooterStyled.scss';

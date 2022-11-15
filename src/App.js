@@ -1,6 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { Sidebar } from './components'
+import { Footer, Sidebar } from './components'
 import { Beginning } from './pages'
 import './styles/GlobalStyle.scss'
 
@@ -13,6 +13,7 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={<Beginning />} />
                 </Routes>
+                <Footer />
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { Cpu, Headset, House, Keyboard, MagnifyingGlass, Mouse, ShoppingCartSimple, SquaresFour, User } from 'phosphor-react'
-import { Logo } from '../assets/images'
+import { LogoWhite } from '../assets/images'
 
 const linksSidebar = [
     { name: 'Inicio', to: '/', icon: <House size={20} />, iconactive: <House size={20} weight='fill' /> },
@@ -19,7 +19,7 @@ const Sidebar = () => {
     return (
         <div className='sidebar-container'>
             <div className='sidebar-top'>
-                <img src={Logo} alt="logo" />
+                <img src={LogoWhite} alt="logo" />
                 <p>Gaming<br/>Store</p>
             </div>
             <div className='sidebar-center'>

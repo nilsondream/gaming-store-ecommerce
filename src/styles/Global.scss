@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @font-face {
-    font-family: 'Akira Expanded';
-    src: url('../assets/fonts/AkiraExpanded-SuperBold.woff2') format('woff2'),
-        url('../assets/fonts/AkiraExpanded-SuperBold.woff') format('woff');
-    font-style: normal;
+    font-family: 'Druk Wide Medium';
+    src: url('../assets/fonts/DrukWideMedium.woff2') format('woff2'),
+        url('../assets/fonts/DrukWideMedium.woff') format('woff');
+    font-style: normal
 }
 
 * {
@@ -48,27 +48,31 @@
     --gradient-2: linear-gradient(135deg, rgba(13, 202, 240, 0.5), rgba(103, 16, 242, 0.5));
 
     //fonts
-    --ff-1: 'Poppins', sans-serif;
-    --ff-2: 'Akira Expanded';
+    --ff-1: 'Inter', sans-serif;
+    --ff-2: 'Druk Wide Medium';
 
     //fonts sizes
-    --fz-xxs: 11px;
-    --fz-xs: 13px;
-    --fz-sm: 15px;
-    --fz-md: 17px;
-    --fz-lg: 19px;
-    --fz-xl: 21px;
-    --fz-2xl: 23px;
-    --fz-3xl: 25px;
-    --fz-4xl: 30px;
+    --fz-4xs: 8px;
+    --fz-3xs: 10px;
+    --fz-2xs: 12px;
+    --fz-xs: 14px;
+    --fz-sm: 16px;
+    --fz-md: 18px;
+    --fz-lg: 20px;
+    --fz-xl: 22px;
+    --fz-2xl: 24px;
+    --fz-3xl: 26px;
+    --fz-4xl: 28px;
+    --fz-5xl: 40px;
 
     //border radius
     --border-0: 2px;
     --border-1: 4px;
-    --border-2: 8px;
-    --border-3: 16px;
-    --border-4: 32px;
-    --border-5: 50px;
+    --border-2: 6px;
+    --border-3: 8px;
+    --border-4: 16px;
+    --border-5: 32px;
+    --border-6: 50px;
 
     //transition
     --transition: .3s ease;
@@ -82,11 +86,17 @@
 html,
 body {
     font-family: var(--ff-1);
+    background: var(--black-0);
     color: var(--white-0);
 }
 
-h1, h2, h3 {
-    font-weight: 600;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: normal;
+    font-size: inherit;
 }
 
 a {
@@ -115,14 +125,15 @@ button {
 
 input {
     color: inherit;
-    border: inherit;
+    border: none;
     font-family: inherit;
     font-size: inherit;
     outline: none;
     background: transparent;
 }
 
-@import './AppStyled.scss';
-@import './SidebarStyled.scss';
-@import './BeginningStyled.scss';
-@import './FooterStyled.scss';
+@import './Navbar.scss';
+@import './Sidebar.scss';
+@import './Footer.scss';
+@import './Home.scss';
+@import './CheckoutFormStyled.scss';

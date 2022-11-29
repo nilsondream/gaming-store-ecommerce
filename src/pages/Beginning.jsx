@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 import { Bell, ChatDots, MagnifyingGlass } from 'phosphor-react'
 import { CPU1, Graphic, Headset1, HomeImg, HomeImg2, Keyboard1, Mouse1, Profile } from '../assets/images'
 
@@ -139,4 +139,4 @@ const Beginning = () => {
     )
 }
 
-export default Beginning
+export default Beginning*/

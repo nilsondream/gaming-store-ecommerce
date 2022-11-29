@@ -1,12 +1,11 @@
 import { DiscordLogo, FacebookLogo, InstagramLogo, TwitchLogo, TwitterLogo, YoutubeLogo } from 'phosphor-react'
 import React from 'react'
-import { LogoWhite } from '../assets/images'
 
 const Footer = () => {
     return (
         <div className='footer-container'>
             <div className='footer-links'>
-                <img src={LogoWhite} alt="logo" />
+                <img src={''} alt="logo" />
                 <ul>
                     <h1>Soporte</h1>
                     <p>Soporte de producto</p>

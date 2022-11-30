@@ -1,0 +1,92 @@
+.headsets-container {
+    padding: 125px 30px 80px 30px;
+
+    .title {
+        font-family: var(--ff-2);
+        font-size: var(--fz-4xl);
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .subtitle {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .products-grid {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+        .products-item {
+            cursor: pointer;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            background: var(--black-1);
+            border: 1px solid var(--black-3);
+            border-radius: var(--border-3);
+            transition: var(--transition);
+            overflow: hidden;
+
+            .img-item {
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 325px;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .desc-item {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                h2 {
+                    font-family: var(--ff-2);
+                    font-size: var(--fz-md);
+                    text-transform: uppercase;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+
+                span {
+                    color: var(--white-5);
+                    font-size: var(--fz-2xs);
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+
+                p {
+                    color: var(--cyan);
+                    font-size: var(--fz-2xs);
+                }
+            }
+
+            &:hover {
+                transform: translateY(-7px);
+                background: var(--black-2);
+                //border-color: var(--cyan);
+                transition: var(--transition);
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .headsets-container {
+        padding: 75px 16px;
+
+        .products-grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { Cpu, Headset, Keyboard, List, MagnifyingGlass, Mouse, ShoppingCartSimple, User } from 'phosphor-react'
+import { Cpu, HandbagSimple, Headset, Keyboard, List, /*MagnifyingGlass,*/ Mouse, User } from 'phosphor-react'
 
 const linksNavbar = [
     { name: 'Audífonos', to: '/headsets', icon: <Headset size={20} /> },
@@ -14,11 +14,11 @@ const Navbar = () => {
         <nav>
             <div className='nav-left'>
                 <div className='btn-menu'><List /></div>
-                <div className='logo'>
+                <NavLink to={'/'} className='logo'>
                     <h1>Gaming</h1>
                     <span>store</span>
                     <h2>GS</h2>
-                </div>
+                </NavLink>
                 <div className='links'>
                     {linksNavbar.map((item) => (
                         <NavLink key={item.name} className={({ isActive }) => (isActive ? 'active' : '')} to={item.to}>
@@ -27,14 +27,14 @@ const Navbar = () => {
                     ))}
                 </div>
             </div>
-            <div className='nav-center'>
+            {/*<div className='nav-center'>
                 <label htmlFor="">
                     <MagnifyingGlass />
                     <input type="text" placeholder='Buscar' />
                 </label>
-            </div>
+                    </div>*/}
             <div className='nav-right'>
-                <ShoppingCartSimple />
+                <HandbagSimple />
                 <User />
             </div>
         </nav>

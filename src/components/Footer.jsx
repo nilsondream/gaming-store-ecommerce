@@ -5,7 +5,10 @@ const Footer = () => {
     return (
         <footer>
             <div className='footer-links'>
-                <img src={''} alt="logo" />
+                <div className='logo'>
+                    <h1>Gaming</h1>
+                    <span>store</span>
+                </div>
                 <ul>
                     <h1>Soporte</h1>
                     <p>Soporte de producto</p>

@@ -11,9 +11,22 @@ footer {
         justify-content: space-between;
         align-items: flex-start;
 
-        img {
-            width: 40px;
-            object-fit: cover;
+        .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            font-family: var(--ff-2);
+            text-transform: uppercase;
+
+            h1 {
+                font-size: var(--fz-xl);
+                font-weight: normal;
+            }
+
+            span {
+                margin-top: -7px;
+                font-size: var(--fz-3xs);
+            }
         }
 
         ul {
@@ -89,7 +102,7 @@ footer {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 32px;
-
+            
             ul {
                 h1 {
                     font-size: var(--fz-sm);

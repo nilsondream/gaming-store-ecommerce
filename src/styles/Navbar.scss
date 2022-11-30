@@ -29,7 +29,7 @@ nav {
             align-items: flex-end;
 
             h1 {
-                font-size: var(--fz-3xl);
+                font-size: var(--fz-xl);
                 font-weight: normal;
             }
 
@@ -41,6 +41,11 @@ nav {
             h2 {
                 display: none;
             }
+
+            &:hover span {
+                transition: var(--transition);
+                color: var(--cyan);
+            }
         }
 
         .links {
@@ -51,10 +56,14 @@ nav {
             a {
                 font-size: var(--fz-3xs);
             }
+
+            .active {
+                color: var(--cyan);
+            }
         }
     }
 
-    .nav-center {
+    /*.nav-center {
         display: flex;
         justify-content: center;
         width: 100%;
@@ -78,7 +87,7 @@ nav {
                 width: 100%;
             }
         }
-    }
+    }*/
 
     .nav-right {
         display: flex;

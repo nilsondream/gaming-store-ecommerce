@@ -102,6 +102,15 @@ footer {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 32px;
+
+            .logo {
+                align-items: flex-start;
+                
+                span {
+                    margin-top: unset;
+                    color: var(--cyan);
+                }
+            }
             
             ul {
                 h1 {

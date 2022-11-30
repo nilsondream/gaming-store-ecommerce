@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div className='footer-container'>
+        <footer>
             <div className='footer-links'>
                 <img src={''} alt="logo" />
                 <ul>
@@ -33,7 +33,7 @@ const Footer = () => {
                 <div><TwitterLogo weight='fill' /></div>
                 <div><YoutubeLogo weight='fill' /></div>
             </div>
-        </div>
+        </footer>
     )
 }
 

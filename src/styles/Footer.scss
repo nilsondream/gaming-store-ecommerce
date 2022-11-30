@@ -1,5 +1,5 @@
-.footer-container {
-    padding: 30px;
+footer {
+    padding: 80px 30px;
     background: var(--black-1);
     //border-radius: var(--border-4);
     display: grid;
@@ -18,15 +18,18 @@
 
         ul {
             h1 {
-                font-size: var(--fz-sm);
-                font-weight: 500;
-                margin-bottom: 20px;
+                font-size: var(--fz-xs);
+                font-weight: 700;
+                //font-family: var(--ff-2);
+                //text-transform: uppercase;
+                margin-bottom: 30px;
             }
 
             p {
                 cursor: pointer;
                 font-size: var(--fz-xs);
-                margin-bottom: 10px;
+                //font-family: var(--ff-2);
+                margin-bottom: 20px;
                 color: var(--white-5);
                 transition: var(--transition);
 
@@ -41,21 +44,22 @@
     .social-links {
         display: flex;
         align-items: flex-start;
-        gap: 5px;
+        gap: 7px;
 
         div {
             cursor: pointer;
-            background: var(--black-3);
-            height: 40px;
-            width: 40px;
-            border-radius: 50%;
+            //background: var(--black-2);
+            height: 50px;
+            width: 50px;
+            border: 1px solid var(--black-3);
+            border-radius: var(--border-2);
             display: flex;
             align-items: center;
             justify-content: center;
             transition: var(--transition);
 
             svg {
-                font-size: 20px;
+                font-size: var(--fz-4xl);
                 color: var(--white-5);
                 transition: var(--transition);
             }
@@ -66,9 +70,35 @@
             }
 
             &:hover {
-                background: var(--black-4);
+                background: var(--black-2);
+                //border-color: var(--black-5);
                 transform: translateY(-5px);
                 transition: var(--transition);
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        grid-template-columns: 1fr;
+        padding: 48px 16px;
+        gap: 32px;
+
+        .footer-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+
+            ul {
+                h1 {
+                    font-size: var(--fz-sm);
+                    margin-bottom: 16px;
+                }
+
+                p {
+                    margin-bottom: 10px;
+                }
             }
         }
     }

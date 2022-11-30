@@ -1,4 +1,4 @@
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,12 +19,16 @@ nav{
         align-items: center;
         gap: 50px;
 
+        .btn-menu {
+            display: none;
+        }
+
         .logo {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
 
-            h1{
+            h1 {
                 font-size: var(--fz-3xl);
                 font-weight: normal;
             }
@@ -33,14 +37,18 @@ nav{
                 margin-top: -7px;
                 font-size: var(--fz-3xs);
             }
+
+            h2 {
+                display: none;
+            }
         }
 
         .links {
             display: flex;
             align-items: center;
-            gap: 40px;
+            gap: 50px;
 
-            a{
+            a {
                 font-size: var(--fz-3xs);
             }
         }
@@ -52,8 +60,8 @@ nav{
         width: 100%;
 
         label {
-            border: 1px solid var(--black-5);
-            padding: 10px;
+            border: 2px solid var(--black-5);
+            padding: 8px 10px;
             display: flex;
             align-items: center;
             gap: 10px;
@@ -66,7 +74,7 @@ nav{
             }
 
             input {
-                font-size: var(--fz-3xs);
+                font-size: var(--fz-2xs);
                 width: 100%;
             }
         }
@@ -79,6 +87,41 @@ nav{
 
         svg {
             font-size: var(--fz-2xl);
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 0 16px;
+        height: 50px;
+
+        .nav-left {
+            gap: 10px               ;
+
+            .btn-menu {
+                display: flex;
+                font-size: var(--fz-3xl);
+            }
+
+            .logo {
+                h1, span {
+                    display: none;
+                }
+
+                h2 {
+                    display: block;
+                    font-size: var(--fz-md);
+                }
+            }
+
+            .links {
+                display: none;
+            }
+        }
+
+        .nav-center {
+            display: none;
         }
     }
 }

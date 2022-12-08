@@ -86,7 +86,8 @@
         padding: 75px 16px;
 
         .products-grid {
-            grid-template-columns: repeat(1, 1fr);
+        margin-top: 20px;
+        grid-template-columns: repeat(1, 1fr);
         }
     }
 }

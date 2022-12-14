@@ -98,33 +98,30 @@ footer {
 
 @media (max-width: 600px) {
     footer {
-        grid-template-columns: 1fr;
-        padding: 48px 16px;
-        gap: 32px;
+        margin-top: 50px;
+        padding: 16px;
 
         .footer-links {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 32px;
-
-            .logo {
-                align-items: flex-start;
-
-                span {
-                    margin-top: unset;
-                    color: var(--cyan);
-                }
+            div {
+                align-items: unset;
+                gap: 32px;
             }
+        }
+
+        .text-footer {
+            width: unset;
+            text-align: center;
+        }
+
+        .footer-bottom {
+            align-items: center;
+            justify-content: unset;
+            flex-direction: column;
+            gap: 20px;
 
             ul {
-                h1 {
-                    font-size: var(--fz-sm);
-                    margin-bottom: 16px;
-                }
-
-                p {
-                    margin-bottom: 10px;
-                }
+                flex-direction: column;
+                gap: 20px;
             }
         }
     }

@@ -52,7 +52,7 @@
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 gap: 20px;
-    
+
                 .products-item {
                     cursor: pointer;
                     padding: 10px;
@@ -63,33 +63,34 @@
                     border-radius: var(--border-3);
                     transition: var(--transition);
                     overflow: hidden;
-    
+
                     .img-item {
                         overflow: hidden;
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         height: 230px;
-    
+
                         img {
                             width: 100%;
                             object-fit: cover;
                         }
                     }
-    
+
                     .desc-item {
                         display: flex;
                         flex-direction: column;
                         gap: 7px;
-    
+
                         h2 {
                             font-size: var(--fz-xs);
                             overflow: hidden;
                             text-overflow: ellipsis;
                             white-space: nowrap;
-                            font-weight: 600;
+                            font-weight: 700;
+                            text-transform: uppercase;
                         }
-    
+
                         span {
                             color: var(--white-5);
                             font-size: var(--fz-2xs);
@@ -97,42 +98,100 @@
                             text-overflow: ellipsis;
                             white-space: nowrap;
                         }
-    
+
                         p {
                             font-size: var(--fz-2xs);
                             //font-weight: 600;
                         }
-    
+
                         button {
                             cursor: pointer;
                             margin-top: 10px;
                             background: var(--black-3);
-                            padding: 10px;
+                            padding: 14px;
                             display: flex;
                             align-items: center;
                             justify-content: center;
                             gap: 10px;
                             font-size: var(--fz-2xs);
-                            border-radius: var(--border-1);
+                            border-radius: var(--border-2);
                             transition: var(--transition);
-    
+
                             svg {
                                 font-size: var(--fz-sm);
                             }
-    
+
                             &:hover {
                                 background: var(--blue);
                                 transition: var(--transition);
                             }
                         }
                     }
-    
+
                     &:hover {
                         //transform: translateY(-5px);
                         //transform: scale(1.025);
                         //background: var(--black-3);
                         border-color: var(--black-4);
                         transition: var(--transition);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .explore-container {
+        padding: 0 16px;
+
+        .categories-section {
+            margin-top: 140px;
+
+            .categories-grid {
+                overflow: hidden;
+                overflow-x: scroll;
+                gap: 10px;
+                margin-top: 16px;
+
+                a {
+                    gap: 8px;
+                    padding: 20px;
+                    width: 150px;
+                }
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+        }
+
+        .new-realse {
+            margin-top: 32px;
+
+            .products-section {
+                .products-grid {
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 16px;
+                    margin-top: 16px;
+
+                    .products-item {
+                        padding: 16px;
+
+                        .img-item {
+                            height: 300px;
+                        }
+
+                        .desc-item {
+                            gap: 8px;
+
+                            h2,
+                            span,
+                            p,
+                            button {
+                                font-size: var(--fz-sm);
+                            }
+                        }
                     }
                 }
             }

@@ -6,7 +6,8 @@ const Home = () => {
 
     return (
         <section className='home-container'>
-            <div className='home-grid'>
+            <div className='home-hero'>
+                <h1>Bienvenido a Gaming Store</h1>
                 <div className='landing-img'>
                     <img src={HomeImg} alt='landing' />
                 </div>

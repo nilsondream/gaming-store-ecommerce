@@ -12,7 +12,7 @@
         height: 3.3em;
         max-height: 3.3em;
         text-transform: uppercase;
-        background: #2a2a2a;
+        background: var(--black-2);
         color: var(--white-3);
         opacity: 1;
         transition: var(--transition);
@@ -78,32 +78,6 @@
                 }
             }
         }
-
-        /*.nav-center {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-    
-            label {
-                border: 2px solid var(--black-5);
-                padding: 8px 10px;
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                border-radius: var(--border-2);
-                width: 60%;
-    
-                svg {
-                    font-size: var(--fz-xl);
-                    color: var(--white-5);
-                }
-    
-                input {
-                    font-size: var(--fz-2xs);
-                    width: 100%;
-                }
-            }
-        }*/
 
         .nav-right {
             display: flex;
@@ -336,51 +310,59 @@
 }
 
 @media (max-width: 600px) {
-    nav {
-        padding: 0 16px;
-        height: 60px;
-
-        .nav-left {
-            width: 10%;
-            gap: 10px;
-
-            .btn-menu {
-                display: flex;
-                font-size: var(--fz-3xl);
-            }
-
-            .logo {
-
-                img {
-                    width: 20px;
+    .fixed-nav-head {
+        nav {
+            height: 60px;
+    
+            .nav-left {
+                padding-left: 16px;
+    
+                .btn-menu {
+                    display: flex;
+                    font-size: var(--fz-3xl);
                 }
-            }
-
-            .links {
-                display: none;
-            }
-        }
-
-        .nav-center {
-            display: block;
-            width: 80%;
-            text-align: center;
-            font-size: var(--fz-sm);
-        }
-
-        .nav-right {
-            width: 10%;
-            justify-content: flex-end;
-
-            svg {
-                &:nth-child(2) {
+    
+                .logo {
+    
+                    img {
+                        width: 20px;
+                    }
+                }
+    
+                .links {
                     display: none;
                 }
             }
-        }
-    }
+    
+            .nav-right {
+                justify-content: flex-end;
+    
+                button {
+                    padding: 0 16px;
 
-    .sidebar-mobile {
-        display: flex;
+                    &:nth-child(2) {
+                        padding: 0 16px;
+                    }
+                }
+            }
+        }
+    
+        .header {
+            height: 70px;
+            padding: 0 15px;
+            
+            .header-left {
+                gap: 5px;
+                
+                .search {
+                    width: 100px;
+                    min-width: 100px;
+
+                    svg {
+                        font-size: var(--fz-2xl);
+                    }
+                }
+            }
+        }
     }
 }

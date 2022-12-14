@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { PaymentElement, useStripe, useElements } from "@stripe/react-stripe-js"
+import '../styles/CheckoutFormStyled.scss';
 
 const CheckoutForm = () => {
     const stripe = useStripe();
@@ -54,7 +55,7 @@ const CheckoutForm = () => {
             elements,
             confirmParams: {
                 // Make sure to change this to your payment completion page
-                return_url: "http://localhost:3000",
+                return_url: "http://localhost:3000/cart",
             },
         });
         
@@ -71,12 +72,14 @@ const CheckoutForm = () => {
         layout: "tabs"
     }
 
+    console.log(message);
+
     return (
         <form id="payment-form" onSubmit={handleSubmit}>
             <PaymentElement id="payment-element" options={paymentElementOptions} />
             <button disabled={isLoading || !stripe || !elements} id="submit">
                 <span id="button-text">
-                    {isLoading ? <div className="spinner" id="spinner"></div> : "Pay now"}
+                    {isLoading ? <div className="spinner" id="spinner"></div> : "Pagar ahora"}
                 </span>
             </button>
             {/* Show any error or success messages */}

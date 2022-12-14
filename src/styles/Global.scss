@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-@font-face {
+/*@font-face {
     font-family: 'Druk Wide Medium';
     src: url('../assets/fonts/DrukWideMedium.woff2') format('woff2'),
         url('../assets/fonts/DrukWideMedium.woff') format('woff');
     font-style: normal
-}
+}*/
 
 * {
     padding: 0;
@@ -32,7 +33,8 @@
     --white-5: #aaa;
     --white-8: #888888;
 
-    --blue: #0d6efd;
+    --blue: #0078f2;
+    //--blue: #0d6efd;
     --indigo: #6610f2;
     --purple: #6f42c1;
     --pink: #d63384;
@@ -48,11 +50,11 @@
     --gradient-2: linear-gradient(135deg, rgba(13, 202, 240, 0.5), rgba(103, 16, 242, 0.5));
 
     //fonts
-    --ff-1: 'Inter', sans-serif;
-    --ff-2: 'Druk Wide Medium';
+    --ff-1: 'Segoe UI', sans-serif;
+    //--ff-2: 'Open Sans', sans-serif;
 
     //fonts sizes
-    --fz-4xs: 8px;
+    --fz-4xs: 9px;
     --fz-3xs: 10px;
     --fz-2xs: 12px;
     --fz-xs: 14px;
@@ -77,16 +79,15 @@
     //transition
     --transition: .3s ease;
     --transition-2: .15s ease;
-}
 
-::-webkit-scrollbar {
-    display: none;
+
+    color-scheme: dark;
 }
 
 html,
 body {
     font-family: var(--ff-1);
-    background: var(--black-0);
+    background: var(--black-1);
     color: var(--white-0);
 }
 
@@ -95,7 +96,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-weight: normal;
+    font-weight: inherit;
     font-size: inherit;
 }
 
@@ -103,8 +104,6 @@ a {
     color: inherit;
     font-family: inherit;
     text-decoration: none;
-    font-size: inherit;
-    font-weight: inherit;
 }
 
 ul,
@@ -136,5 +135,5 @@ input {
 @import './Sidebar.scss';
 @import './Footer.scss';
 @import './Home.scss';
+@import './Explore.scss';
 @import './Headsets.scss';
-@import './CheckoutFormStyled.scss';

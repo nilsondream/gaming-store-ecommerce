@@ -1,0 +1,141 @@
+.explore-container {
+    padding: 0 10vw;
+
+    .categories-section {
+        margin-top: 200px;
+
+        h1 {
+            font-size: var(--fz-2xl);
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+
+            a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                width: 100%;
+                border-radius: var(--border-3);
+                cursor: pointer;
+                padding: 30px;
+                background: var(--black-2);
+                transition: var(--transition);
+
+                svg {
+                    font-size: var(--fz-5xl);
+                }
+
+                &:hover {
+                    background: var(--blue);
+                    transition: var(--transition);
+                }
+            }
+        }
+    }
+
+    .new-realse {
+        margin-top: 50px;
+
+        .products-section {
+            h1 {
+                font-size: var(--fz-2xl);
+            }
+
+            .products-grid {
+                margin-top: 25px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+    
+                .products-item {
+                    cursor: pointer;
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    background: var(--black-2);
+                    border: 2px solid transparent;
+                    border-radius: var(--border-3);
+                    transition: var(--transition);
+                    overflow: hidden;
+    
+                    .img-item {
+                        overflow: hidden;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 230px;
+    
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+    
+                    .desc-item {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 7px;
+    
+                        h2 {
+                            font-size: var(--fz-xs);
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            font-weight: 600;
+                        }
+    
+                        span {
+                            color: var(--white-5);
+                            font-size: var(--fz-2xs);
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+    
+                        p {
+                            font-size: var(--fz-2xs);
+                            //font-weight: 600;
+                        }
+    
+                        button {
+                            cursor: pointer;
+                            margin-top: 10px;
+                            background: var(--black-3);
+                            padding: 10px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 10px;
+                            font-size: var(--fz-2xs);
+                            border-radius: var(--border-1);
+                            transition: var(--transition);
+    
+                            svg {
+                                font-size: var(--fz-sm);
+                            }
+    
+                            &:hover {
+                                background: var(--blue);
+                                transition: var(--transition);
+                            }
+                        }
+                    }
+    
+                    &:hover {
+                        //transform: translateY(-5px);
+                        //transform: scale(1.025);
+                        //background: var(--black-3);
+                        border-color: var(--black-4);
+                        transition: var(--transition);
+                    }
+                }
+            }
+        }
+    }
+}
